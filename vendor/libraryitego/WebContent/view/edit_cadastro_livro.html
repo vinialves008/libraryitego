@@ -1,0 +1,29 @@
+{include="cadastro_livro"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			var isbn = "{$isbn}";
+			var nome_livro = "{$nome_livro}";
+			var ano_livro = "{$ano_livro}";
+			var assunto = "{$assunto}";
+			var edicao = "{$edicao}";
+			var idarea = "{$idarea}";
+			var ideditora = "{$ideditora}";
+			var idlivro = "{$idlivro}";
+		
+			$("#isbn").val(isbn);
+			$("#nome_livro").val(nome_livro);
+			$("#ano_livro").val(ano_livro);
+			$("#assunto").val(assunto);
+			$("#edicao").val(edicao);
+			$("#idarea").val(idarea);
+			$("#ideditora").val(ideditora);
+			
+			$("#formlivro").append('<input type="hidden" name="idlivro" id="idlivro">');
+			$("#idlivro").val(idlivro);
+		
+	});
+
+</script>
